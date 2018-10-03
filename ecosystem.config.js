@@ -24,6 +24,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'https://github.com/vinodnair01/pm2test.git',
       path : '/home/wayfinder/public_html',
+      "pre-deploy-local" : "echo 'This is a local executed command'"
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
